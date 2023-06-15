@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  text-align: center;
+  font-family: monospace;
+  font-size: 21px;
+  background-color: #f5f2ed;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+div {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+div:hover {
+
+}

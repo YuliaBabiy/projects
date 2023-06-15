@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="./style/12r-rock-paper-scissor.css">
+</head>
+<body>
+  <div class="container">
+    <p class="title">Rock Paper Scissors</p>
+
+    <p class="js-result result"></p>
+    <p class="js-moves">
+      You
+      <img class="move-icon" src="./img/rock-emoji.png" alt="">
+      <img class="move-icon" src="./img/scissors-emoji.png" alt="">
+      Computer
+    </p>
+    <p class="js-score score"></p>
+
+    <button class="reset-score-button" id="reset-score">Reset Score</button>
+
+    <button class="auto-play-button" id="auto-play">Auto Play</button>
+
+    <div id="confirm-msg" class="confirm-msg">
+      <p>Are you sure you want to reset the score?</p>
+      <button id="yes-btn">Yes</button>
+      <button id="no-btn">No</button>
+    </div>
+
+    <div class="mrgn-top-50 ">
+      <button class="move-button js-rock-btn">
+        <img class="move-icon" src="./img/rock-emoji.png" alt="">
+      </button>
+
+      <button class="move-button js-paper-btn">
+        <img class="move-icon" src="./img/paper-emoji.png" alt="">
+      </button>
+
+      <button class="move-button js-scissors-btn">
+        <img class="move-icon" src="./img/scissors-emoji.png" alt="">
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/12r-rock-paper-scissors.js"></script>
+</body>
+</html>

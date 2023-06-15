@@ -1,0 +1,47 @@
+body {
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1c1a1a;
+  color: white;
+}
+
+input {
+  font-size: 15px;
+  padding: 5px;
+  height: 22px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px;
+  height: 36px;
+  width: 83px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  transition: .1s ease-in;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+.todo-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.delete-btn {
+  background-color: #c72323;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.padding {
+  padding: 9px 0;
+}
+
