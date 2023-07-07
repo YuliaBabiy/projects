@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Monsterrat;
+  src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: rgb(108 105 105);
+  font-family: Monsterrat;
+  padding: 50px;
+}
+
+form {
+  margin: 0 auto;
+  background-color: #1b1b1b;
+  color: white;
+  border-radius: 10px;
+  max-width: 350px;
+  padding: 60px;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+label {
+  font-size: 12px;
+}
+
+.field {
+  position: relative;
+  width: 100%;
+  margin: 5px 0 11px;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 40px 10px 10px;
+  background-color: rgb(49 49 49);
+  border-radius: 5px;
+  border: 1px solid #404040;
+  color: white;
+}
+
+input:focus {
+  background-color: rgb(62, 62, 62);
+  color: white;
+}
+
+.show-password-btn {
+  top: 9px;
+  right: 10px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#match-message {
+  display: none;
+  color: red;
+}
+
+#match-message.show,
+.error-message.show {
+  display: block;
+}
+
+.error-message span {
+  display: block;
+}
+
+.error-message {
+  font-size: 10px;
+  display: none;
+  margin: 5px 0;
+}
+
+.submit {
+  background-color: rgb(246, 138, 61);
+  color: white;
+  max-width: initial;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(246, 138, 61);
+}
+
+

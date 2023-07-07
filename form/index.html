@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <title>Form Validation</title>
+</head>
+<body>
+  
+  <div class="container">
+    <form id="demo-form" action="?" method="POST">
+      <h1>Create Your Account</h1>
+
+      <label for="name">Name</label>
+      <div class="field">
+        <input type="text" placeholder="Julia" id="name">
+      </div>
+
+      <label for="email">Email</label>
+      <div class="field">
+        <input type="text" placeholder="julia.dev@gmail.com" id="email">
+      </div>
+
+      <label for="password-input">Password</label>
+      <div class="field">
+        <input 
+          type="password"
+          id="password-input"
+          placeholder="Enter password"
+        />
+        <img class="show-password-btn" onclick="togglePassword()" src="./img/8664903_eye_slash_icon.svg" alt="">
+      </div>
+      
+      <div class="error-message">
+        <span class="requirement">Default pasword requirement:</span>
+        <span id="length-message">Password must be at least 8 characters long.</span>
+        <span id="uppercase-message">Must include at least one uppercase character.</span>
+        <span id="lowercase-message">Must include at least one lowercase character.</span>
+        <span id="numeric-message">Must include at least one numeric character.</span>
+      </div>
+
+      <label for="password-confirm-input">Confirm Password</label>
+      <div class="field">
+        <input 
+          type="password"
+          placeholder="Confirm password"
+          id="password-confirm-input"
+        >
+        <img class="show-password-btn" onclick="togglePassword()" src="./img/8664903_eye_slash_icon.svg" alt="">
+        <div>
+          <span id="match-message">Password Does Not Match!</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <input class="checkbox" type="checkbox">
+        <span>I agree to the 
+          <span><a href="#">Terms and condition</a></span>
+          and
+          <span><a href="#">Privacy Policy</a></span>
+        </span>
+      </div>
+
+      <div></div>
+
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LcmKE0mAAAAAL0hTAMPkvJNdAe5ovOa5NLpmzG2"
+        data-theme="dark"
+      ></div>
+
+      <div class="field">
+        <input class="submit" type="submit" value="Submit">
+      </div>
+
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
