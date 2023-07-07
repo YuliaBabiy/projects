@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto-Light.woff) format(woff);
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Roboto;
+}
+
+.container {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.stopwatch {
+  font-size: 80px;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  background-color: #424242;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.button::after {
+  content: '';
+  width: 62px;
+  height: 62px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
+.start {
+  background-color: #083808;
+  color: #18ba18;
+}
+
+.stop {
+  background-color: #440f0f;
+  color: #de0000;
+}
+
+.lap-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lap-num, .laps {
+  line-height: 2;
+}
+
+/* .border {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+} */
+

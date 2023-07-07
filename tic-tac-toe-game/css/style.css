@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.col {
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgb(120, 120, 120);
+  cursor: pointer;
+}
+
+.cross {
+  background-color: rgb(94, 167, 255);
+}
+
+.null {
+  background-color: rgb(255, 87, 118);
+}
