@@ -8,17 +8,38 @@
 </head>
 <body>
   <div class="container">
-    <div id="tile-1" class="col"></div>
-    <div id="tile-2" class="col"></div>
-    <div id="tile-3" class="col"></div>
-    <div id="tile-4" class="col"></div>
-    <div id="tile-5" class="col"></div>
-    <div id="tile-6" class="col"></div>
-    <div id="tile-7" class="col"></div>
-    <div id="tile-8" class="col"></div>
-    <div id="tile-9" class="col"></div>
+    <div class="players-container">
+      <div id="active-player-cross" class="player">
+        <img class="cross-null-img" src="./img/cross.svg" alt="">
+      </div>
+      <div class="score">
+        <span id="cross-score" class="score-point">0</span>
+        <span>:</span>
+        <span id="null-score" class="score-point">0</span>
+      </div>
+      <div id="active-player-null" class="player">
+        <img class="cross-null-img" src="./img/o.svg" alt="">
+      </div>
+    </div>
+    <div class="tiles-container">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
 
-    <div id="res"></div>
+      <div id="draw" class="draw">
+        <div class="draw-text">Draw!</div>
+      </div>
+    </div>
+    <div class="reset-play-container">
+      <div id="reset-score" class="green reset-play-btn">Reset Score</div>
+      <div id="play-again" class="red reset-play-btn">Play Again</div>
+    </div>
   </div>
 
 
